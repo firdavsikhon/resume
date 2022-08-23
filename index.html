@@ -6,31 +6,44 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <meta name="keywords" content="Firdavsikhon, cv"/>
         <meta name="description" content="Firdavsikhon's resume website"/>
+        <link rel="stylesheet" href="resume.css">
         <title>Firdavsikhon resume</title>
     </head>
     <body>
+        <div class="container">
+        <div class="info">
+        <img src="myphoto.jpg" alt="human" class="avatar">
+        <div class="info-text">
+        <h1 class="capital">Firdavsikhon Makhkambekova</h1>
+        <p>I'm studying at the IT Park University</p>
         
-        <img src="myself.jpg" alt="human">
-
-        <h1>Firdavsikhon Makhkambekova</h1>
-        <p>Nowadays I'm learning programming</p>
-        <p>I <em>love</em> listening to <strong>classical music,reading book and programming</strong></p>
-        
+        <div class="card bg-green" id="box">
         <h4>My social websites:</h4>
             <a href="https://codepen.io/firdavsikhon" target="_blank">Codepen</a>
             |
             <a href="https://dev.to/khon" target="_blank">Dev Community</a>
-
+            |
+            <a href="https://github.com/firdavsikhon" target="_blank">GitHub</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        
+        <div class="card bg-yellow" >
         <h2>My hobbies</h2>
-
-        <ol>
+        <ol class="list">
             <li>Listening to classical music</li>
-            <li>Reading books</li>
+            <li>Reading science fiction books</li>
             <li>Watching Harry Potter movies</li>
         </ol>
+        </div>
 
+        <br>
+
+        <div class="card bg-red">
         <h2>Work experience</h2>
-        <table>
+        <table class="list2">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -40,16 +53,18 @@
             </thead>
             <tbody>   
                 <tr>
-                    <td>Call center</td>
-                    <td>Call opertor</td>
-                    <td>2021</td>
+                    <td>Supermarket</td>
+                    <td>Cashier</td>
+                    <td>2022</td>
                 </tr>
             </tbody>
         </table>
-
-        <h2>Connect with me</h2>
-        <form>
-        <div>
+        </div>
+        
+        <div class="box2">
+        <form action="/" class="form"> 
+            <h2>Connect with me</h2>
+        <div class="form-group">
             <label for="name">Your name</label>
             <input type="name" id="name"  placeholder="type your name">
         </div>
@@ -59,15 +74,18 @@
             <input type="email" id="email" placeholder=" type your email">
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">Your message</label>
             <br>
             <textarea id="message" cols="20" rows="5" placeholder="type your message"></textarea>
         </div>
          
-        <input type="submit" value="send">
-    
+        <input type="submit" value="send" class="btn">
         </form>
+        </div>
+        </div>
+
+
     </body>
 
 </html>
